@@ -24,6 +24,18 @@ User Stories are managed via a Kanban Board in a GitHub Project. The status an i
 Open `api/mark?percentage=49` => "5" 
 **or** `api/mark?percentage=80` => "2"
 
+Complete Grading Scheme:
+
+>= 88% 1 
+
+>= 75% and < 88% 2 
+
+>= 63% and < 75% 3 
+
+>= 50% and < 63% 4 
+
+< 50% 5
+
 2. As a developer I want to test an then implement the API path /api/mark
 
 **Testcases:**
