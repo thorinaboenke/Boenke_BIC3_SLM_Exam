@@ -14,7 +14,7 @@ User Stories are managed via a Kanban Board in a GitHub Project. The status an i
 
 **REQ-Definition:**
 
-- A message is always returned when the user opens the URI path `/grade?percentage=<inputValue>`.
+- A message is always returned when the user opens the URI path `/mark?percentage=<inputValue>`.
 - The message content is the grade corresponding to the entered percentage value
 - The message must not be empty
 - The message content must be in a human readable format
@@ -36,7 +36,7 @@ Complete Grading Scheme:
 
 < 50% 5
 
-2. As a developer I want to test an then implement the API path /api/mark
+2. As a developer I want implement and test the API path /api/mark
 
 **Testcases:**
 `GetMark` => Returns Status OK and calculated grade as content
@@ -107,7 +107,7 @@ A README.md file in the repository contains information on
 Issues are tracked in a github project Kanban Board. Issues can have the status "to do", "in progress" and "done". Issues and corresponding feature branches should each link to each other. (i.e. "This feature relates to issue #1" etc.)
 
 ### Branch History
-There is a 'main' branch, a 'development' branch and feature branches. Features are developed on their respective feature branches and first merged into 'development'. A deployment to production environment would correspond to a merge of the changes of 'development' into 'main'.
+There is a 'main' branch and feature branches. Features are developed on their respective feature branches and first merged into 'development'. A deployment to production environment would correspond to a merge of the changes of 'development' into 'main'.
 
 No direct commits on main are allowed except for the initial commit and (for convenience) for modification of the documentation.
 
