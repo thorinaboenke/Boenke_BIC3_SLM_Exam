@@ -1,15 +1,11 @@
 package com.example.boenke_bic3_slm_exam.controller;
-
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-
 @RestController
 public class MarkController {
     @GetMapping("/api/mark")
-    public String returnComplimentaryColor(@RequestParam String percentage) {
-
+    public String returnMark(@RequestParam String percentage) {
         Integer percent ;
         try
         {
@@ -19,7 +15,6 @@ public class MarkController {
         {
             return "invalid input";
         }
-
         if (percent > 100) {
             return "invalid parameter";
         }
